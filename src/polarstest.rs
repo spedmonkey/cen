@@ -160,7 +160,7 @@ fn online() {
 
 fn offline() -> PolarsResult<DataFrame> {
     let _start = Instant::now();
-    let df = read();
+    let df = read();\
     let _duration = _start.elapsed();
     println!("duration: {:?} milli seconds", (_duration.as_millis()));
     match df {
